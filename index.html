@@ -280,57 +280,54 @@
         /* (2) LIFE AT THE BARK YARD */
         #life-at-bark-yard {
             background-color: var(--white);
+            padding: 0;
+            overflow: hidden;
         }
 
         .life-layout {
             display: grid;
             grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-            gap: 30px;
-            align-items: center;
+            min-height: 520px;
         }
 
-        .dog-avatar-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .life-content {
+            padding: 4rem 5%;
         }
 
-        .dog-avatar {
+        .life-image-panel {
             position: relative;
-            width: 230px;
-            height: 230px;
-            border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 12px 28px rgba(0,0,0,0.18);
-            border: 5px solid var(--accent);
         }
 
-        .dog-avatar img {
+        .life-image-panel img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
 
         .speech-bubble {
             position: absolute;
-            right: -10px;
-            top: 12px;
+            left: 20px;
+            bottom: 30px;
             background: var(--white);
             padding: 10px 14px;
             border-radius: 18px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.18);
-            font-size: 0.8rem;
-            max-width: 160px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+            font-size: 0.85rem;
+            font-weight: 600;
+            max-width: 180px;
+            color: var(--secondary);
         }
 
-        .speech-bubble::after {
+        .speech-bubble::before {
             content: "";
             position: absolute;
-            bottom: -6px;
-            right: 26px;
-            border-width: 6px 6px 0 6px;
+            top: -8px;
+            left: 20px;
+            border-width: 0 8px 8px 8px;
             border-style: solid;
-            border-color: var(--white) transparent transparent transparent;
+            border-color: transparent transparent var(--white) transparent;
         }
 
         .life-story-steps {
@@ -577,7 +574,8 @@
                 grid-template-columns: minmax(0, 1fr);
             }
 
-            .dog-avatar-wrapper { order: -1; margin-bottom: 10px; }
+            .life-image-panel { min-height: 300px; }
+            .life-content { padding: 2.5rem 5%; }
         }
 
         @media (max-width: 768px) {
@@ -682,7 +680,7 @@
                     <span>Training Corners</span>
                 </div>
                 <div class="pawsitive-item">
-                    <img src="https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?auto=format&fit=crop&w=800&q=80" alt="Dog pool placeholder">
+                    <img src="images/doggypool1.jpg" alt="Dog pool placeholder">
                     <span>Doggy Pool</span>
                 </div>
                 <div class="pawsitive-item">
@@ -693,38 +691,36 @@
         </div>
     </section>
 
-    <section id="life-at-bark-yard">
-        <div class="section-header">
-            <h2 class="section-title">Life at The Bark Yard</h2>
-            <p class="section-subtitle">Step into a day in the life of a Bark Yard pup – told from a dog’s point of view.</p>
-        </div>
+        <section id="life-at-bark-yard">
         <div class="life-layout">
-            <div>
-                <p><em>"Hi, I am a regular at The Bark Yard – and this is what my day looks like!"</em></p>
+            <div class="life-content">
+                <div class="section-header" style="text-align:left; margin-bottom:1.5rem;">
+                    <h2 class="section-title">Life at The Bark Yard</h2>
+                    <p class="section-subtitle" style="margin:0;">Step into a day in the life of a Bark Yard pup – told from a dog's point of view.</p>
+                </div>
+                <p><em>“Hi, I am a regular at The Bark Yard – and this is what my day looks like!”</em></p>
                 <div class="life-story-steps">
                     <div class="life-step" data-step="1">
-                        <strong>Morning Hellos & Sniffs</strong>
-                        <span>I trot into The Bark Yard, tail wagging, and I'm greeted by familiar humans and a few of my best doggy friends. Check-in is quick, and I know I’m in my safe space.</span>
+                        <strong>Morning Hellos &amp; Sniffs</strong>
+                        <span>I trot into The Bark Yard, tail wagging, and I'm greeted by familiar humans and a few of my best doggy friends. Check-in is quick, and I know I'm in my safe space.</span>
                     </div>
                     <div class="life-step" data-step="2">
                         <strong>Learning Time</strong>
                         <span>Then comes training – sit, stay, walk nicely, and all the fun brain games that make my humans super proud. The trainers are calm, patient, and always ready with treats.</span>
                     </div>
                     <div class="life-step" data-step="3">
-                        <strong>Play, Splash & Chill</strong>
-                        <span>After training, it’s time to play in the yard or take a splash in the pool. I run, chase toys, make new friends, and then snooze in a cozy corner when I’m tired.</span>
+                        <strong>Play, Splash &amp; Chill</strong>
+                        <span>After training, it's time to play in the yard or take a splash in the pool. I run, chase toys, make new friends, and then snooze in a cozy corner when I'm tired.</span>
                     </div>
                     <div class="life-step" data-step="4">
                         <strong>Home Time, Happy Time</strong>
-                        <span>By the time my human comes to pick me up, I’m tired in the best way – mentally and physically. I go home calmer, more confident, and very, very happy.</span>
+                        <span>By the time my human comes to pick me up, I'm tired in the best way – mentally and physically. I go home calmer, more confident, and very, very happy.</span>
                     </div>
                 </div>
             </div>
-            <div class="dog-avatar-wrapper">
-                <div class="dog-avatar">
-                    <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80" alt="Happy dog at training placeholder">
-                    <div class="speech-bubble">"This is my happy place!"</div>
-                </div>
+            <div class="life-image-panel">
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&h=800&w=800&q=80" alt="Happy dog at The Bark Yard">
+                <div class="speech-bubble">“This is my happy place!”</div>
             </div>
         </div>
     </section>
@@ -783,25 +779,25 @@
         </div>
         <div class="gallery-grid">
             <div class="gallery-item" data-type="video" data-src="https://lh3.googleusercontent.com/ggs/AF1QipO7-O5AiFtagxSQztuatbdlog5Uzgw5OY-g4TCc=m18?cpn=WgXbbZhERRtt_oLD">
-                <video muted playsinline poster="https://images.unsplash.com/photo-1593134257782-e89567b7718a?auto=format&fit=crop&w=800&q=80"></video>
+                <video muted playsinline poster="images/doggypool1.jpg"></video>
                 <div class="gallery-badge">Owner Video</div>
                 <div class="play-icon">▶</div>
             </div>
 
             <div class="gallery-item" data-type="video" data-src="https://lh3.googleusercontent.com/ggs/AF1QipNSU72JMrSl_CyPVxsGVQplKWV6jKVjkjXOmg_J=m18?cpn=eWDnS3kS9DwRTfm1">
-                <video muted playsinline poster="https://images.unsplash.com/photo-1593134257782-e89567b7718a?auto=format&fit=crop&w=800&q=80"></video>
+                <video muted playsinline poster="images/doggywalk1.png"></video>
                 <div class="gallery-badge">Owner Video</div>
                 <div class="play-icon">▶</div>
             </div>
 
             <div class="gallery-item" data-type="video" data-src="https://lh3.googleusercontent.com/ggs/AF1QipMVQRWHQBxkND98QLgeG63s-oxOVz4KUgDC5Ela=m18?cpn=kGXFzTdcdJ1ZPyDW">
-                <video muted playsinline poster="https://images.unsplash.com/photo-1593134257782-e89567b7718a?auto=format&fit=crop&w=800&q=80"></video>
+                <video muted playsinline poster="images/doggyswim1.png"></video>
                 <div class="gallery-badge">Owner Video</div>
                 <div class="play-icon">▶</div>
             </div>
 
-            <div class="gallery-item" data-type="image" data-src="https://images.unsplash.com/photo-1601758177266-bc599de87707?auto=format&fit=crop&w=800&q=80">
-                <img src="https://images.unsplash.com/photo-1601758177266-bc599de87707?auto=format&fit=crop&w=800&q=80" alt="Dogs playing placeholder">
+            <div class="gallery-item" data-type="image" data-src="images/playtime1.jpg">
+                <img src="images/playtime1.jpg" alt="Dogs playing placeholder">
                 <div class="gallery-badge">Play Time</div>
             </div>
 
@@ -828,7 +824,10 @@
             </div>
         </div>
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6666666666665!2d73.000000!3d19.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x03A0x0!2zMTnCsDAwJzAwLjAiTiA3M8KwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+  src="https://maps.google.com/maps?q=Shop+No+1+Neptune+CHS+Plot+77+Sector+50+Seawoods+Navi+Mumbai+400706&z=17&output=embed"
+  width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
         </div>
     </section>
 
