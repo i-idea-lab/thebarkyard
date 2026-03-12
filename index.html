@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Bark Yard | Dog Training, Grooming & Daycare in Seawoods</title>
+    <meta name="description" content="The Bark Yard offers expert dog training, grooming, day care, and swimming pool services in Seawoods, Navi Mumbai. Transform your pup into a well-behaved companion today!">
+    <meta name="keywords" content="Dog training Seawoods, Puppy training Navi Mumbai, Dog grooming Seawoods, Dog day care, Dog swimming pool, Pet boarding Seawoods, Dog agility training, The Bark Yard, Dog trainer Navi Mumbai">
+    <meta name="author" content="The Bark Yard">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="The Bark Yard - Happy Dogs, Happy Owners">
+    <meta property="og:description" content="Expert training, grooming, and day care in Seawoods. Visit us today!">
+    <meta property="og:image" content="https://instagram.fbom61-1.fna.fbcdn.net/v/t51.82787-19/575950580_17848668489591500_1887196915206933575_n.jpg">
+    <meta property="og:url" content="https://www.thebarkyardtraining.com">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FF6B35;
+            --secondary: #1A237E;
+            --accent: #FFC107;
+            --bg-light: #FFF8E1;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka', sans-serif;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        img { max-width: 100%; display: block; }
+
+        nav {
+            background-color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            object-fit: cover;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-btn {
+            background-color: var(--primary);
+            color: var(--white) !important;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(255, 107, 53, 0.3);
+            font-size: 0.9rem;
+        }
+
+        .cta-btn:hover {
+            background-color: #e55a2b;
+            transform: translateY(-2px);
+        }
+
+        .menu-toggle { display: none; cursor: pointer; font-size: 1.5rem; }
+
+        .hero {
+            background: linear-gradient(rgba(26, 35, 126, 0.6), rgba(26, 35, 126, 0.6)), url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 4rem 1.5rem 3rem;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 2.8rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .hero-note {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        section { padding: 4rem 5%; }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .section-subtitle {
+            color: #666;
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 0.95rem;
+        }
+
+        .services {
+            background-color: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 6px solid var(--accent);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+
+        .service-card p { color: #555; font-size: 0.95rem; }
+
+        /* (1) PAWSITIVE VIBES ONLY */
+        #pawsitive-vibes {
+            background-color: var(--bg-light);
+        }
+
+        .pawsitive-wrapper {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .pawsitive-text p { color: #555; font-size: 0.95rem; }
+
+        .pawsitive-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .pawsitive-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        }
+
+        .pawsitive-item img { height: 160px; object-fit: cover; width: 100%; }
+
+        .pawsitive-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.35), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .pawsitive-item span {
+            position: absolute;
+            left: 12px;
+            bottom: 10px;
+            color: var(--white);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        .pawsitive-item:hover::after { opacity: 1; }
+
+        /* (2) LIFE AT THE BARK YARD */
+        #life-at-bark-yard {
+            background-color: var(--white);
+        }
+
+        .life-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .dog-avatar-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dog-avatar {
+            position: relative;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+            border: 5px solid var(--accent);
+        }
+
+        .dog-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .speech-bubble {
+            position: absolute;
+            right: -10px;
+            top: 12px;
+            background: var(--white);
+            padding: 10px 14px;
+            border-radius: 18px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.18);
+            font-size: 0.8rem;
+            max-width: 160px;
+        }
+
+        .speech-bubble::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            right: 26px;
+            border-width: 6px 6px 0 6px;
+            border-style: solid;
+            border-color: var(--white) transparent transparent transparent;
+        }
+
+        .life-story-steps {
+            display: grid;
+            gap: 15px;
+        }
+
+        .life-step {
+            background: var(--bg-light);
+            border-radius: 16px;
+            padding: 14px 14px 14px 50px;
+            position: relative;
+        }
+
+        .life-step::before {
+            content: attr(data-step);
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .life-step strong { display: block; margin-bottom: 3px; }
+
+        .life-step span { font-size: 0.9rem; color: #555; }
+
+        /* (3) HAPPY TAILS & TRAINING TALES */
+        #happy-tails {
+            background-color: var(--bg-light);
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .story-card {
+            background: var(--white);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .story-media {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 150px;
+        }
+
+        .story-media img { width: 100%; height: 100%; object-fit: cover; }
+
+        .story-content {
+            padding: 16px 18px 18px;
+        }
+
+        .story-tag {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--secondary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .story-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        .story-meta {
+            font-size: 0.8rem;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .story-text {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* (4) SNAPS, SPLASHES & SMILES */
+        #snaps-splashes-smiles {
+            background-color: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+            cursor: pointer;
+        }
+
+        .gallery-item img,
+        .gallery-item video {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s;
+        }
+
+        .gallery-item:hover img,
+        .gallery-item:hover video {
+            transform: scale(1.05);
+        }
+
+        .gallery-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 4px 8px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .play-icon {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2.2rem;
+            pointer-events: none;
+            text-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 1rem;
+        }
+
+        .lightbox.open { display: flex; }
+
+        .lightbox-content {
+            max-width: 960px;
+            width: 100%;
+            max-height: 90vh;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .lightbox-content img,
+        .lightbox-content video {
+            width: 100%;
+            height: auto;
+            max-height: 90vh;
+            object-fit: contain;
+            display: block;
+            background: #000;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 10px;
+            right: 14px;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        /* CONTACT & LOCATION */
+        .info-section {
+            background-color: var(--secondary);
+            color: var(--white);
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+            gap: 25px;
+            align-items: flex-start;
+        }
+
+        .info-text h2 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            font-size: 0.95rem;
+            margin: 10px 0;
+        }
+
+        .contact-details a { color: var(--accent); }
+
+        .map-container {
+            height: 320px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+        }
+
+        iframe { width: 100%; height: 100%; border: 0; }
+
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: #ccc; }
+
+        @media (max-width: 900px) {
+            .pawsitive-wrapper,
+            .life-layout,
+            .info-section {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .dog-avatar-wrapper { order: -1; margin-bottom: 10px; }
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 0.6rem 5%; }
+            .nav-links { display: none; position: absolute; top: 60px; right: 5%; background: #fff; flex-direction: column; padding: 12px 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border-radius: 12px; }
+            .nav-links a { margin: 6px 0; }
+            .menu-toggle { display: block; }
+            .hero { padding-top: 4.5rem; }
+            .hero h1 { font-size: 2.1rem; }
+            .section-title { font-size: 1.7rem; }
+            section { padding: 3rem 5%; }
+            .gallery-item img, .gallery-item video { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="https://instagram.fbom61-1.fna.fbcdn.net/v/t51.82787-19/575950580_17848668489591500_1887196915206933575_n.jpg" alt="The Bark Yard Logo" class="logo-img">
+            <span class="logo-text">The Bark Yard</span>
+        </div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#pawsitive-vibes">Pawsitive Vibes</a>
+            <a href="#life-at-bark-yard">Life at The Bark Yard</a>
+            <a href="#happy-tails">Happy Tails</a>
+            <a href="#snaps-splashes-smiles">Gallery</a>
+            <a href="#contact" class="cta-btn">Call Now</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Where Good Boys & Girls Learn, Play, and Grow!</h1>
+        <p>Expert training, grooming, daycare, boarding, and a fun doggy pool in the heart of Seawoods. A safe, structured and loving space for every kind of pup.</p>
+        <div class="hero-cta-group">
+            <a href="#contact" class="cta-btn">Book a Visit</a>
+            <a href="#services" class="cta-btn" style="background-color: var(--accent); color: var(--secondary); box-shadow: 0 4px 6px rgba(255, 193, 7, 0.4);">View Services</a>
+        </div>
+        <p class="hero-note">Serving pet parents across Seawoods & Navi Mumbai.</p>
+    </section>
+
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive care for your furry best friend – from basic manners to fun pool time and cozy boarding.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🐾</div>
+                <h3>Dog Training</h3>
+                <p>Structured, positive-reinforcement based training for puppies and adult dogs – from basic obedience to behavior issues.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Boarding</h3>
+                <p>Safe, supervised, and homely boarding so your dog feels like they are on vacation – not just staying away from home.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Agility & Fitness</h3>
+                <p>Fun obstacle courses and activities that build confidence, coordination, and keep your dog mentally and physically fit.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌞</div>
+                <h3>Day Care</h3>
+                <p>All-day play and socialization in a supervised environment, perfect for energetic dogs and busy pet parents.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💦</div>
+                <h3>Swimming Pool</h3>
+                <p>Controlled, low-impact swimming sessions – great for joint health, confidence building, and pure doggy joy.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎓</div>
+                <h3>Board & Train</h3>
+                <p>Intensive stay-and-train program where your dog lives with us, learns with us, and goes home with better manners.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pawsitive-vibes">
+        <div class="section-header">
+            <h2 class="section-title">Pawsitive Vibes Only</h2>
+            <p class="section-subtitle">Take a sneak peek into our happy corner of Seawoods – a space built to keep tails wagging and hearts at ease.</p>
+        </div>
+        <div class="pawsitive-wrapper">
+            <div class="pawsitive-text">
+                <p>From the moment you step inside The Bark Yard, you are greeted with wagging tails, bright colors and a calm, structured environment. Every corner is designed keeping your dog's safety, comfort, and enrichment in mind.</p>
+                <p>Clean play zones, supervised interaction spaces, a splash-friendly pool, and cozy resting areas come together to create a truly <strong>pawsitive</strong> zone – for both dogs and humans.</p>
+                <p>Scroll through the photos to get a feel of where your pup will learn, nap, train, and just be their happiest self.</p>
+            </div>
+            <div class="pawsitive-grid">
+                <div class="pawsitive-item">
+                    <img src="https://images.unsplash.com/photo-1558944351c152fee60f2?auto=format&fit=crop&w=800&q=80" alt="Indoor dog play area placeholder">
+                    <span>Indoor Play Zone</span>
+                </div>
+                <div class="pawsitive-item">
+                    <img src="https://images.unsplash.com/photo-1517423440428a5a00ad493e?auto=format&fit=crop&w=800&q=80" alt="Training area placeholder">
+                    <span>Training Corners</span>
+                </div>
+                <div class="pawsitive-item">
+                    <img src="https://images.unsplash.com/photo-1548685913feeccb6e06c?auto=format&fit=crop&w=800&q=80" alt="Dog pool placeholder">
+                    <span>Doggy Pool</span>
+                </div>
+                <div class="pawsitive-item">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800&q=80" alt="Rest area placeholder">
+                    <span>Rest & Nap Spaces</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="life-at-bark-yard">
+        <div class="section-header">
+            <h2 class="section-title">Life at The Bark Yard</h2>
+            <p class="section-subtitle">Step into a day in the life of a Bark Yard pup – told from a dog’s point of view.</p>
+        </div>
+        <div class="life-layout">
+            <div>
+                <p><em>"Hi, I am a regular at The Bark Yard – and this is what my day looks like!"</em></p>
+                <div class="life-story-steps">
+                    <div class="life-step" data-step="1">
+                        <strong>Morning Hellos & Sniffs</strong>
+                        <span>I trot into The Bark Yard, tail wagging, and I'm greeted by familiar humans and a few of my best doggy friends. Check-in is quick, and I know I’m in my safe space.</span>
+                    </div>
+                    <div class="life-step" data-step="2">
+                        <strong>Learning Time</strong>
+                        <span>Then comes training – sit, stay, walk nicely, and all the fun brain games that make my humans super proud. The trainers are calm, patient, and always ready with treats.</span>
+                    </div>
+                    <div class="life-step" data-step="3">
+                        <strong>Play, Splash & Chill</strong>
+                        <span>After training, it’s time to play in the yard or take a splash in the pool. I run, chase toys, make new friends, and then snooze in a cozy corner when I’m tired.</span>
+                    </div>
+                    <div class="life-step" data-step="4">
+                        <strong>Home Time, Happy Time</strong>
+                        <span>By the time my human comes to pick me up, I’m tired in the best way – mentally and physically. I go home calmer, more confident, and very, very happy.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dog-avatar-wrapper">
+                <div class="dog-avatar">
+                    <img src="https://images.unsplash.com/photo-1530281700549e82e7ea65?auto=format&fit=crop&w=800&q=80" alt="Happy dog at training placeholder">
+                    <div class="speech-bubble">"This is my happy place!"</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="happy-tails">
+        <div class="section-header">
+            <h2 class="section-title">Happy Tails & Training Tales</h2>
+            <p class="section-subtitle">Real stories of real dogs who came in with challenges – and left with wagging tails and proud pet parents.</p>
+        </div>
+        <div class="stories-grid">
+            <div class="story-card">
+                <div class="story-media">
+                    <img src="https://images.unsplash.com/photo-1529927066849cd1c0aef?auto=format&fit=crop&w=800&q=80" alt="Before training placeholder">
+                    <img src="https://images.unsplash.com/photo-1534361960057b43d3cdd88?auto=format&fit=crop&w=800&q=80" alt="After training placeholder">
+                </div>
+                <div class="story-content">
+                    <span class="story-tag">Puppy Basics</span>
+                    <h3>Bruno Learns His Basics</h3>
+                    <div class="story-meta">Duration: 4 weeks • Focus: Leash manners & recall</div>
+                    <p class="story-text">Bruno came in as an over-excited pup who pulled on the leash, jumped on guests, and had zero recall outdoors. With structured sessions and consistent homework for his family, Bruno now walks calmly on the leash, waits politely to greet, and comes back when called – even with distractions.</p>
+                </div>
+            </div>
+
+            <div class="story-card">
+                <div class="story-media">
+                    <img src="https://images.unsplash.com/photo-1525983360071e04f5c9dee?auto=format&fit=crop&w=800&q=80" alt="Reactive dog before placeholder">
+                    <img src="https://images.unsplash.com/photo-1548199973203cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="Calm dog after placeholder">
+                </div>
+                <div class="story-content">
+                    <span class="story-tag">Confidence Building</span>
+                    <h3>Simba Finds His Calm</h3>
+                    <div class="story-meta">Duration: 6 weeks • Focus: Reactivity & confidence</div>
+                    <p class="story-text">Simba used to bark and lunge at other dogs on walks, making outings stressful for both him and his family. Through controlled socialization, confidence-building games, and handler coaching, Simba now walks past other dogs with far more composure and can enjoy calm, happy walks.</p>
+                </div>
+            </div>
+
+            <div class="story-card">
+                <div class="story-media">
+                    <img src="https://images.unsplash.com/photo-1601752493455a26f0d02?auto=format&fit=crop&w=800&q=80" alt="Before pool placeholder">
+                    <img src="https://images.unsplash.com/photo-1596496050764b35b9c0b99?auto=format&fit=crop&w=800&q=80" alt="After pool confidence placeholder">
+                </div>
+                <div class="story-content">
+                    <span class="story-tag">Swim & Fitness</span>
+                    <h3>Chiku’s Splash Journey</h3>
+                    <div class="story-meta">Duration: 3 weeks • Focus: Water confidence & fitness</div>
+                    <p class="story-text">Chiku was nervous around water but needed low-impact exercise. With gradual exposure, positive reinforcement, and patient handling, she went from hesitant paw dips to confident swims – and now looks forward to her pool sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="snaps-splashes-smiles">
+        <div class="section-header">
+            <h2 class="section-title">Snaps, Splashes & Smiles</h2>
+            <p class="section-subtitle">A visual diary of our happiest moments – training wins, pool splashes, play sessions and those soulful eyes we can’t say no to.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-type="video" data-src="https://lh3.googleusercontent.com/ggs/AF1QipO7-O5AiFtagxSQztuatbdlog5Uzgw5OY-g4TCc=m18?cpn=WgXbbZhERRtt_oLD">
+                <video muted playsinline poster="https://images.unsplash.com/photo-1548191265-cc70d3d45ba?auto=format&fit=crop&w=800&q=80"></video>
+                <div class="gallery-badge">Owner Video</div>
+                <div class="play-icon">▶</div>
+            </div>
+
+            <div class="gallery-item" data-type="video" data-src="https://lh3.googleusercontent.com/ggs/AF1QipNSU72JMrSl_CyPVxsGVQplKWV6jKVjkjXOmg_J=m18?cpn=eWDnS3kS9DwRTfm1">
+                <video muted playsinline poster="https://images.unsplash.com/photo-151784984553070cded776d?auto=format&fit=crop&w=800&q=80"></video>
+                <div class="gallery-badge">Owner Video</div>
+                <div class="play-icon">▶</div>
+            </div>
+
+            <div class="gallery-item" data-type="video" data-src="https://lh3.googleusercontent.com/ggs/AF1QipMVQRWHQBxkND98QLgeG63s-oxOVz4KUgDC5Ela=m18?cpn=kGXFzTdcdJ1ZPyDW">
+                <video muted playsinline poster="https://images.unsplash.com/photo-1517423440428a5a00ad493e?auto=format&fit=crop&w=800&q=80"></video>
+                <div class="gallery-badge">Owner Video</div>
+                <div class="play-icon">▶</div>
+            </div>
+
+            <div class="gallery-item" data-type="image" data-src="https://images.unsplash.com/photo-152525308631696a1e0e33?auto=format&fit=crop&w=800&q=80">
+                <img src="https://images.unsplash.com/photo-152525308631696a1e0e33?auto=format&fit=crop&w=800&q=80" alt="Dogs playing placeholder">
+                <div class="gallery-badge">Play Time</div>
+            </div>
+
+            <div class="gallery-item" data-type="image" data-src="https://images.unsplash.com/photo-1519150268069c094c1b?auto=format&fit=crop&w=800&q=80">
+                <img src="https://images.unsplash.com/photo-1519150268069c094c1b?auto=format&fit=crop&w=800&q=80" alt="Dog with trainer placeholder">
+                <div class="gallery-badge">Training</div>
+            </div>
+
+            <div class="gallery-item" data-type="image" data-src="https://images.unsplash.com/photo-1583512603805e9da6c9f06?auto=format&fit=crop&w=800&q=80">
+                <img src="https://images.unsplash.com/photo-1583512603805e9da6c9f06?auto=format&fit=crop&w=800&q=80" alt="Dog resting placeholder">
+                <div class="gallery-badge">Chill Mode</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="contact">
+        <div class="info-text">
+            <h2>Visit The Bark Yard</h2>
+            <p>We are conveniently located in Seawoods, Navi Mumbai. Drop by, meet the team, and let your dog explore our space.</p>
+            <div class="contact-details">
+                <p><strong>Address</strong><br>Shop no - 1, NEPTUNE CHS, Plot no - 77,<br>New Sector-50, W, Seawoods,<br>Navi Mumbai, Maharashtra 400706</p>
+                <p><strong>Phone</strong><br><a href="tel:8976424333">8976424333</a></p>
+                <p><strong>Instagram</strong><br><a href="https://www.instagram.com/thebarkyardtraining" target="_blank" rel="noopener">@thebarkyardtraining</a></p>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6666666666665!2d73.000000!3d19.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x03A0x0!2zMTnCsDAwJzAwLjAiTiA3M8KwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        © <span id="year"></span> The Bark Yard. All rights reserved. Built with love for dogs in Seawoods.
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <div id="lightboxInner"></div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxInner = document.getElementById('lightboxInner');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const type = item.getAttribute('data-type');
+                const src = item.getAttribute('data-src');
+                lightboxInner.innerHTML = '';
+
+                if (type === 'video') {
+                    const video = document.createElement('video');
+                    video.src = src;
+                    video.controls = true;
+                    video.autoplay = true;
+                    video.style.backgroundColor = '#000';
+                    lightboxInner.appendChild(video);
+                } else {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    lightboxInner.appendChild(img);
+                }
+
+                lightbox.classList.add('open');
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('open');
+            lightboxInner.innerHTML = '';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('open');
+                lightboxInner.innerHTML = '';
+            }
+        });
+    </script>
+</body>
+</html>
