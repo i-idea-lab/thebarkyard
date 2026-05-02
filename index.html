@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Barkyard — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bark: #3b2a1a;
+      --cream: #fdf6ec;
+      --amber: #d4813a;
+      --amber-light: #f2b06e;
+      --sage: #6b7f5e;
+      --warm-white: #fffdf9;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--bark);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Background texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(212,129,58,0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(107,127,94,0.1) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Paw print decorations */
+    .paw-bg {
+      position: fixed;
+      font-size: 9rem;
+      opacity: 0.04;
+      pointer-events: none;
+      z-index: 0;
+      user-select: none;
+    }
+    .paw-bg.p1 { top: -2rem; right: 5%; transform: rotate(25deg); }
+    .paw-bg.p2 { bottom: 5%; left: -2%; transform: rotate(-15deg); font-size: 7rem; }
+    .paw-bg.p3 { top: 40%; left: 60%; font-size: 5rem; opacity: 0.03; }
+
+    /* Header */
+    header {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 4rem 2rem 2.5rem;
+    }
+
+    .logo-lockup {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-paw {
+      font-size: 3rem;
+      animation: wag 3s ease-in-out infinite;
+      transform-origin: bottom center;
+      display: inline-block;
+    }
+
+    @keyframes wag {
+      0%, 100% { transform: rotate(-8deg); }
+      50%       { transform: rotate(8deg); }
+    }
+
+    .logo-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 900;
+      color: var(--bark);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    .logo-title span {
+      color: var(--amber);
+    }
+
+    .logo-tagline {
+      font-size: 0.85rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-top: 0.25rem;
+    }
+
+    /* Divider */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      max-width: 480px;
+      margin: 2.5rem auto 0;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--amber-light), transparent);
+    }
+    .divider-icon {
+      color: var(--amber);
+      font-size: 1.1rem;
+    }
+
+    /* Nav grid */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 3rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .nav-intro {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--bark);
+      opacity: 0.65;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .nav-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--warm-white);
+      border: 1.5px solid rgba(212,129,58,0.15);
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--bark);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+      box-shadow: 0 2px 12px rgba(59,42,26,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, var(--amber), var(--amber-light));
+      border-radius: 14px 0 0 14px;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform 0.22s ease;
+    }
+
+    .nav-card:hover {
+      transform: translateY(-3px) translateX(2px);
+      box-shadow: 0 8px 28px rgba(59,42,26,0.12);
+      border-color: rgba(212,129,58,0.4);
+      background: #fffefa;
+    }
+
+    .nav-card:hover::before {
+      transform: scaleY(1);
+    }
+
+    .card-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      line-height: 1;
+      transition: transform 0.22s ease;
+    }
+    .nav-card:hover .card-icon {
+      transform: scale(1.15);
+    }
+
+    .card-text {
+      flex: 1;
+    }
+
+    .card-number {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      opacity: 0.7;
+      margin-bottom: 0.15rem;
+    }
+
+    .card-label {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--bark);
+      line-height: 1.2;
+    }
+
+    .card-arrow {
+      font-size: 1rem;
+      color: var(--amber);
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .nav-card:hover .card-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Footer */
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--bark);
+      opacity: 0.4;
+      letter-spacing: 0.06em;
+    }
+
+    /* Staggered entrance animations */
+    .nav-card {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.5s ease forwards;
+    }
+    .nav-card:nth-child(1) { animation-delay: 0.05s; }
+    .nav-card:nth-child(2) { animation-delay: 0.12s; }
+    .nav-card:nth-child(3) { animation-delay: 0.19s; }
+    .nav-card:nth-child(4) { animation-delay: 0.26s; }
+    .nav-card:nth-child(5) { animation-delay: 0.33s; }
+    .nav-card:nth-child(6) { animation-delay: 0.40s; }
+    .nav-card:nth-child(7) { animation-delay: 0.47s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header { animation: fadeUp 0.6s ease forwards; }
+  </style>
+</head>
+<body>
+
+  <div class="paw-bg p1">🐾</div>
+  <div class="paw-bg p2">🐾</div>
+  <div class="paw-bg p3">🐾</div>
+
+  <header>
+    <div class="logo-lockup">
+      <span class="logo-paw">🐕</span>
+      <h1 class="logo-title">The <span>Barkyard</span></h1>
+      <p class="logo-tagline">Where every dog finds their happy place</p>
+    </div>
+    <div class="divider">
+      <span class="divider-icon">🐾</span>
+    </div>
+  </header>
+
+  <main>
+    <p class="nav-intro">Explore everything The Barkyard has to offer</p>
+
+    <nav class="nav-grid" aria-label="Site Navigation">
+
+      <a href="01_the_barkyard_home.html" class="nav-card">
+        <span class="card-icon">🏡</span>
+        <div class="card-text">
+          <div class="card-number">01</div>
+          <div class="card-label">The Barkyard Home</div>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="02_professional_training.html" class="nav-card">
+        <span class="card-icon">🎓</span>
+        <div class="card-text">
+          <div class="card-number">02</div>
+          <div class="card-label">Professional Training</div>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="03_expert_grooming.html" class="nav-card">
+        <span class="card-icon">✂️</span>
+        <div class="card-text">
+          <div class="card-number">03</div>
+          <div class="card-label">Expert Grooming</div>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="04_our_services.html" class="nav-card">
+        <span class="card-icon">🦴</span>
+        <div class="card-text">
+          <div class="card-number">04</div>
+          <div class="card-label">Our Services</div>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="05_transparent_pricing.html" class="nav-card">
+        <span class="card-icon">💰</span>
+        <div class="card-text">
+          <div class="card-number">05</div>
+          <div class="card-label">Transparent Pricing</div>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="06_the_gallery.html" class="nav-card">
+        <span class="card-icon">📸</span>
+        <div class="card-text">
+          <div class="card-number">06</div>
+          <div class="card-label">The Gallery</div>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="07_join_the_pack.html" class="nav-card">
+        <span class="card-icon">🐾</span>
+        <div class="card-text">
+          <div class="card-number">07</div>
+          <div class="card-label">Join the Pack</div>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+    </nav>
+  </main>
+
+  <footer>
+    &copy; 2026 The Barkyard &nbsp;·&nbsp; All rights reserved
+  </footer>
+
+</body>
+</html>
