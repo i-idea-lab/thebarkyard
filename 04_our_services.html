@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e0e0ff",
+                    "surface": "#fff8f2",
+                    "on-secondary-fixed": "#000767",
+                    "on-secondary-container": "#27308a",
+                    "tertiary-fixed-dim": "#fabd00",
+                    "on-surface": "#211b0e",
+                    "on-primary-fixed": "#390c00",
+                    "surface-bright": "#fff8f2",
+                    "on-tertiary-fixed-variant": "#5b4300",
+                    "surface-container-highest": "#eee1cc",
+                    "primary-fixed": "#ffdbd0",
+                    "on-surface-variant": "#594139",
+                    "surface-tint": "#ab3500",
+                    "on-primary-container": "#5f1900",
+                    "secondary-fixed-dim": "#bdc2ff",
+                    "primary-container": "#ff6b35",
+                    "inverse-surface": "#373022",
+                    "outline": "#8d7168",
+                    "on-error-container": "#93000a",
+                    "on-background": "#211b0e",
+                    "outline-variant": "#e1bfb5",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#959efd",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#f4e7d2",
+                    "on-secondary-fixed-variant": "#343d96",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#412f00",
+                    "primary-fixed-dim": "#ffb59d",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdf9e",
+                    "tertiary": "#785900",
+                    "surface-dim": "#e5d8c4",
+                    "on-primary-fixed-variant": "#832600",
+                    "inverse-primary": "#ffb59d",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#faecd7",
+                    "surface-variant": "#eee1cc",
+                    "secondary": "#4c56af",
+                    "tertiary-container": "#c29200",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#fff2de",
+                    "inverse-on-surface": "#fcefda",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#261a00",
+                    "primary": "#ab3500",
+                    "background": "#fff8f2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 248, 242, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-orange-50/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-sm dark:shadow-none transition-colors duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4 w-full">
+<img alt="The Barkyard Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhgRE9R0sAkWPCEres4cmgIhcapDR5MX5abPvHq-Bv1KX-GaBgMsMnDwN2eEVZhgNSfx2j8yWoCzSS6FxguTLSuS92QScl5HthHCOs5hp36rYX5qVlCnLaE0wyyePQQwGsIRangzPOwseWf8ZR3ZNMEbZ-ZDsKBFoS_rwFwyDJWg6jtG2UZp_K4dGEoOc_kN2gk9k6Cy6vCOXeHiwslqC8fLA9xZn_chc5xB9x1i_EGTL94ocrEGA4O8DlOHCWCfirFDNQYvr19"/>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-8 items-center font-['Plus_Jakarta_Sans'] font-semibold tracking-tight">
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Training</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Grooming</a>
+<a class="text-orange-700 dark:text-orange-400 border-b-2 border-orange-600 pb-1" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Pricing</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Gallery</a></div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-headline font-bold scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/10">
+                Book a Visit
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-6 py-20 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label font-bold text-sm">
+                        PREMIUM CARE
+                    </span>
+<h1 class="text-6xl md:text-7xl font-headline font-extrabold text-on-surface tracking-tighter leading-[1.1]">
+                        The Best <br/><span class="text-primary italic">Day Ever</span>.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-md leading-relaxed">
+                        At The Barkyard, we treat every guest like family. Explore our atelier of sun-drenched services designed for the modern canine lifestyle.
+                    </p>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Happy golden retriever and border collie running in a sunlit outdoor garden with soft green grass and warm golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4ReNCmMLLA_ZFr6A02Sf53haQ6dN5ChQqMFV5Im0niLufYRD_MTHI1-j83HOp1c7orgzzZC2Lv_Qep5jK4enCr-G9WadNRpG1FbN9Kvsk_fg5XWWBxmNocAnPzJVPwR8sbl1HdY-EIPDzrO1hQ7clSTufLN0EJaq9PHtHpR8npSNxV3YwS8KGoG_P5ZAHpmpXi-QBTUY_KjVBU4FVWgwJb3XcL5CmA2ArpE2lL9VwZMAhRwRjz42hOBvtVlrAhK6rBACvXwG_8w"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-lg shadow-xl max-w-xs hidden md:block">
+<p class="text-tertiary font-headline font-bold text-lg mb-2 italic">"Tail-wagging guaranteed"</p>
+<p class="text-on-surface-variant text-sm">Every visit is curated by our certified canine behavior experts.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="bg-surface-container-low rounded-t-xl px-6 py-24">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-headline font-extrabold text-on-surface">Curated Experiences</h2>
+<p class="text-on-surface-variant text-lg">Personalized care that goes beyond the basics.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card: Expert Grooming -->
+<div class="bg-surface-container-lowest p-8 rounded-lg group hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
+<div class="aspect-square mb-8 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Professional groomer gently brushing a clean, fluffy white poodle in a bright modern pet salon with warm wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfuaq2dntpfwYNfUObe4Wq30_FcWqDEf-WS3cdagJk4GllNzh3vJcyjSBwvoIrkWjAF-nsrV5ZU8oiOu-DXEYoYW5cd4zMh8lI7W4b0V7R9j029FFiS7REhxiyB_yH22XbcUPImKzaDFdTyh_Y120zMVQalWngeOA_bigdZXJ6Gb6R6EVZg_56fCOS4rtp1wKThCJ-7RYvWEd400ZFLwohpKRc4l8RbUvhkMei9NH_S1x539IzMn-9_QEO5j7aF0GsrmDEeCgAYw"/>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Expert Grooming</h3>
+<p class="text-on-surface-variant mb-6 flex-grow">A spa-like sanctuary where we use organic botanicals and stress-free techniques for a pristine coat.</p>
+<ul class="space-y-3 mb-8 text-sm font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Organic Lavender Baths</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Hand-Scissor Styling</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Ultrasonic Teeth Cleaning</li>
+</ul>
+<div class="pt-6 border-t border-surface-variant">
+<div class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mb-1">Starting from</div>
+<div class="text-3xl font-headline font-extrabold text-primary mb-6">$85</div>
+<button class="w-full py-4 rounded-full bg-surface-container-highest text-primary font-headline font-bold hover:bg-primary hover:text-on-primary transition-all duration-300">Learn More</button>
+</div>
+</div>
+<!-- Service Card: Professional Training -->
+<div class="bg-surface-container-lowest p-8 rounded-lg group hover:shadow-2xl transition-all duration-500 flex flex-col h-full border-2 border-primary-fixed">
+<div class="aspect-square mb-8 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Certified dog trainer using positive reinforcement with a focused labrador retriever in a sun-drenched indoor training hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0dUwslI_fBGJOTVDTpcd_H58QfiK8alosf3cObzDjmjOpxffYDmJsuSvCg7wR1HmF3QHbgT5wyvYV4-qzplkxONhuqzj5hUFFQxpXFiGA-MjT0NE3cCC5OSSUPR_Hv5Zznxx2hwdSb-AlKXUIY-ZV2Q_nTOZ4xUQmX9Blod46J5ZeAqgfBfUSlEXLWi5QuvCxxetLSLSVhfiXK6hC5WoflzvhnM49SC3LTAQgx69nVaJLXtxPQpzqS7igTLi_LKh6cC7jKror3g"/>
+</div>
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-headline font-bold">Professional Training</h3>
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-bold text-[10px] uppercase rounded-full">Popular</span>
+</div>
+<p class="text-on-surface-variant mb-6 flex-grow">Communication-based training that strengthens the bond between you and your best friend.</p>
+<ul class="space-y-3 mb-8 text-sm font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Positive Reinforcement</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Socialization Mastery</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Behavior Consultation</li>
+</ul>
+<div class="pt-6 border-t border-surface-variant">
+<div class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mb-1">Packages from</div>
+<div class="text-3xl font-headline font-extrabold text-primary mb-6">$450</div>
+<button class="w-full py-4 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold shadow-lg shadow-primary/20 transition-all duration-300">Learn More</button>
+</div>
+</div>
+<!-- Service Card: Joyful Daycare -->
+<div class="bg-surface-container-lowest p-8 rounded-lg group hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
+<div class="aspect-square mb-8 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Group of diverse small breed dogs playing together in a bright, safe indoor daycare facility with colorful toys and soft flooring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK07lV7KeP-bENyst0IC5EuIWTkM0z9DKFv2Ue_Xvze9A3NVFy9aR_yOBxV3RpfnJDCTjpH3drYDBazxxurA2gIM_nwCIGIIma7YiMZzzdg4aZ3QvBMGbzD_5a-_5vX_ePbE4X3jylosCM5ZjyRv0oRUwgNJ0YIEGvAzADdx4KUjpqxa99_mXv4NYYxyUMS-MzLga6650VganZ__OoQz0_nk0Rwa_8-beE8m7rWMuPQwk0mKcLFDKz08m3JneT_dJ7vNeWGAhkGg"/>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Joyful Daycare</h3>
+<p class="text-on-surface-variant mb-6 flex-grow">An upscale environment designed for mental stimulation, supervised play, and peaceful naps.</p>
+<ul class="space-y-3 mb-8 text-sm font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> 24/7 Supervised Play</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Enrichment Activities</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Nap Time Relaxation</li>
+</ul>
+<div class="pt-6 border-t border-surface-variant">
+<div class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mb-1">Full Day</div>
+<div class="text-3xl font-headline font-extrabold text-primary mb-6">$65</div>
+<button class="w-full py-4 rounded-full bg-surface-container-highest text-primary font-headline font-bold hover:bg-primary hover:text-on-primary transition-all duration-300">Learn More</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Facilities Section: Bento Grid -->
+<section class="px-6 py-24 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="text-5xl font-headline font-extrabold text-on-surface leading-tight">State-of-the-art <br/>canine architecture.</h2>
+</div>
+<p class="text-on-surface-variant text-lg max-w-sm">Every corner of The Barkyard was built with dog comfort and human aesthetics in mind.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-[800px]">
+<!-- Large Feature: Doggy Pool -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-low rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Luxurious blue-tiled dog swimming pool with crystal clear water and a gentle ramp entry for dogs of all sizes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnFTLI_y0e3jrYOzI9awaBqdR_02E6ygwIhwS_07N1zgNRTxVjDD3lPx0bf5z3yW5-bPRPxnPMyPCiFL4Qb3dzOY9E1PaHTIVTc4cMPJgQGrFuIr7gLbSPDUnFt3BHpxZ4M_aVKWGTYq67JSpQ2ipua45pl1hRtEynNeg7C7oMWmCcmqhr1EUHr7yY7bIk6BEPJNlqt0DJ886BysqMx58jPk5psZH9VCcinulPzu6FZ1Hd5Ehdj6eSO887QwPMPjVklsFmQejZ7g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<span class="text-tertiary-fixed font-bold tracking-widest text-xs uppercase mb-2 block">Aquatics</span>
+<h3 class="text-4xl font-headline font-bold mb-2">The Doggy Pool</h3>
+<p class="text-white/80 max-w-xs">Mineral-treated, temperature-controlled water for joint-friendly exercise and pure fun.</p>
+</div>
+</div>
+<!-- Secondary: Indoor Play Zone -->
+<div class="md:col-span-2 md:row-span-1 bg-secondary-container rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover opacity-60 transition-transform duration-1000 group-hover:scale-110" data-alt="Wide shot of a clean indoor play park for dogs with premium rubber flooring and architectural climbing obstacles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPrTMwaWkKXXJvmRLmpDEWXn8nLJTXUCfsLbsxa2aT-OyKnslECABc3-cqR-me0obifM8yZcqrnjHq0AA-AqOAjHYI6Ubdz-LM15ZbEjyn5CfCFNU25o6bDSdqTJ3Ym9UyMpOUYPKXBeVBHcEYC8mI_zQSnWY84eL-FX5F6wkk4lmlnX3yf9cUfi_qSaucL6D3QaIcKJH4XYyp9mxgtK5nTtiR7C7BEGJFy3Y4hNnQfHHuuSmN0H_Bcg5BDhJFpygYR99ld5oUqg"/>
+<div class="absolute inset-0 flex flex-col justify-center p-10">
+<h3 class="text-3xl font-headline font-bold text-on-secondary-container mb-2">Indoor Play Zone</h3>
+<p class="text-on-secondary-container/80 max-w-md">10,000 sq ft of air-conditioned, rubber-floored terrain for high-energy Zoomies.</p>
+</div>
+</div>
+<!-- Small: Zen Den -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-high rounded-xl p-8 flex flex-col justify-between">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">airline_seat_flat</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-1">Zen Den</h4>
+<p class="text-sm text-on-surface-variant">Sound-proofed nap suites with orthopedic bedding.</p>
+</div>
+</div>
+<!-- Small: The Treat Bar -->
+<div class="md:col-span-1 md:row-span-1 bg-primary-fixed rounded-xl p-8 flex flex-col justify-between">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">icecream</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-1">Treat Bar</h4>
+<p class="text-sm text-on-primary-fixed-variant">Artisan bakery featuring organic, small-batch treats.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-6 py-20">
+<div class="max-w-7xl mx-auto bg-on-surface text-white rounded-xl overflow-hidden flex flex-col md:flex-row items-center">
+<div class="p-12 md:p-20 flex-1 space-y-8">
+<h2 class="text-5xl font-headline font-extrabold tracking-tight">Ready for a <br/>tail-wagging tour?</h2>
+<p class="text-white/70 text-lg leading-relaxed">Book a complimentary meet-and-greet session to see why we're the city's highest-rated pet sanctuary.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-10 py-4 rounded-full font-headline font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform">Schedule Visit</button>
+<button class="bg-white/10 hover:bg-white/20 text-white px-10 py-4 rounded-full font-headline font-bold backdrop-blur-md transition-colors">Call Us Directly</button>
+</div>
+</div>
+<div class="hidden lg:block w-1/3 aspect-square h-full">
+<img class="w-full h-full object-cover" data-alt="Smiling owner hugging a large fluffy dog in front of a modern architectural building at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYhFjvLAJ53NQS2QV8cKYl1_IeuIZAqF3yD8FQtVSwr2CHkMISAxiKdASJ3W4fh5KZuUYyDusUogKmZDb1KYTVywp720B6f9ZUyUW82skGar_MJHxH8u7iZTYyfvZuV5iVUPm7Bqfn-F5q6mMyyNjpRpwMdGbkTKZ8_AvaWYuPm5g7ZEBrGgTnasvyEmVmBU2pUQV4RsZpHXn6W--YVg49ojHYTLZoQfYGq-AdyuT7PAr9OWWhHsLHJBGmdk1xOHVVss2yN37BBA"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-stone-100 dark:bg-stone-900">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="space-y-6">
+<img alt="The Barkyard Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhgRE9R0sAkWPCEres4cmgIhcapDR5MX5abPvHq-Bv1KX-GaBgMsMnDwN2eEVZhgNSfx2j8yWoCzSS6FxguTLSuS92QScl5HthHCOs5hp36rYX5qVlCnLaE0wyyePQQwGsIRangzPOwseWf8ZR3ZNMEbZ-ZDsKBFoS_rwFwyDJWg6jtG2UZp_K4dGEoOc_kN2gk9k6Cy6vCOXeHiwslqC8fLA9xZn_chc5xB9x1i_EGTL94ocrEGA4O8DlOHCWCfirFDNQYvr19"/>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                    Elevated joy for every tail. We are more than a facility; we are a community dedicated to the happiness of your companion.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-orange-700">social_leaderboard</span>
+<span class="material-symbols-outlined text-orange-700">potted_plant</span>
+<span class="material-symbols-outlined text-orange-700">favorite</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h4 class="font-headline font-bold text-on-surface uppercase text-xs tracking-widest">Experience</h4>
+<div class="flex flex-col gap-3 font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400">
+<a class="hover:text-orange-500 transition-colors" href="#">Training</a>
+<a class="hover:text-orange-500 transition-colors" href="#">Grooming</a>
+<a class="hover:text-orange-500 transition-colors" href="#">Daycare</a>
+<a class="hover:text-orange-500 transition-colors" href="#">Pool</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline font-bold text-on-surface uppercase text-xs tracking-widest">Company</h4>
+<div class="flex flex-col gap-3 font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400">
+<a class="hover:text-orange-500 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-orange-500 transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-orange-500 transition-colors" href="#">Contact Us</a>
+<a class="hover:text-orange-500 transition-colors" href="#">Careers</a>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline font-bold text-on-surface uppercase text-xs tracking-widest">Newsletter</h4>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400">Join our pack for exclusive event invites and pet care tips.</p>
+<div class="flex gap-2">
+<input class="bg-white border-none rounded-full px-6 py-3 flex-grow text-sm focus:ring-2 focus:ring-primary/40" placeholder="email@tail.com" type="email"/>
+<button class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pb-12 pt-8 border-t border-surface-variant/30 text-center">
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400">© 2024 The Barkyard. Elevated Joy for Every Tail.</p>
+</div>
+</footer>
+</body></html>

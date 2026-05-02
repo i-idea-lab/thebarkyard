@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grooming | The Barkyard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus_Jakarta_Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#000767",
+                    "secondary-container": "#959efd",
+                    "surface-tint": "#ab3500",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#594139",
+                    "on-primary-container": "#5f1900",
+                    "inverse-primary": "#ffb59d",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#27308a",
+                    "tertiary-fixed": "#ffdf9e",
+                    "on-error": "#ffffff",
+                    "surface-container": "#faecd7",
+                    "secondary": "#4c56af",
+                    "tertiary-fixed-dim": "#fabd00",
+                    "surface-container-highest": "#eee1cc",
+                    "on-tertiary-fixed-variant": "#5b4300",
+                    "on-secondary": "#ffffff",
+                    "outline": "#8d7168",
+                    "surface": "#fff8f2",
+                    "secondary-fixed-dim": "#bdc2ff",
+                    "on-secondary-fixed-variant": "#343d96",
+                    "outline-variant": "#e1bfb5",
+                    "inverse-on-surface": "#fcefda",
+                    "background": "#fff8f2",
+                    "secondary-fixed": "#e0e0ff",
+                    "primary-fixed-dim": "#ffb59d",
+                    "on-primary-fixed": "#390c00",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-background": "#211b0e",
+                    "on-surface": "#211b0e",
+                    "surface-dim": "#e5d8c4",
+                    "surface-container-high": "#f4e7d2",
+                    "on-tertiary-fixed": "#261a00",
+                    "tertiary": "#785900",
+                    "inverse-surface": "#373022",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#ffdbd0",
+                    "on-primary-fixed-variant": "#832600",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#412f00",
+                    "tertiary-container": "#c29200",
+                    "surface-bright": "#fff8f2",
+                    "surface-variant": "#eee1cc",
+                    "primary": "#ab3500",
+                    "surface-container-low": "#fff2de",
+                    "primary-container": "#ff6b35"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #ab3500 0%, #ff6b35 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-orange-50/80 backdrop-blur-xl shadow-sm transition-colors duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4 w-full">
+<div class="text-2xl font-bold text-orange-900 font-headline"><img alt="The Barkyard Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhgRE9R0sAkWPCEres4cmgIhcapDR5MX5abPvHq-Bv1KX-GaBgMsMnDwN2eEVZhgNSfx2j8yWoCzSS6FxguTLSuS92QScl5HthHCOs5hp36rYX5qVlCnLaE0wyyePQQwGsIRangzPOwseWf8ZR3ZNMEbZ-ZDsKBFoS_rwFwyDJWg6jtG2UZp_K4dGEoOc_kN2gk9k6Cy6vCOXeHiwslqC8fLA9xZn_chc5xB9x1i_EGTL94ocrEGA4O8DlOHCWCfirFDNQYvr19"/></div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 hover:text-orange-800 transition-colors font-semibold" href="#">Training</a>
+<a class="text-orange-700 border-b-2 border-orange-600 pb-1 font-semibold" href="#">Grooming</a>
+<a class="text-stone-600 hover:text-orange-800 transition-colors font-semibold" href="#">Services</a>
+<a class="text-stone-600 hover:text-orange-800 transition-colors font-semibold" href="#">Pricing</a><a class="text-stone-600 hover:text-orange-800 transition-colors font-semibold" href="#gallery">Gallery</a>
+</div>
+<button class="primary-gradient text-on-primary px-8 py-3 rounded-xl font-headline font-bold shadow-lg scale-100 active:scale-95 transition-transform">
+                Book a Visit
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Asymmetric Editorial Layout -->
+<section class="relative px-6 py-12 lg:py-24 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-wider mb-6">PREMIUM GROOMING</span>
+<h1 class="text-6xl lg:text-7xl font-display font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
+                        A Spa Day for Your <span class="text-primary italic">Best Friend.</span>
+</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-10 max-w-lg">
+                        We believe grooming should be an act of love. Our sun-drenched atelier provides a stress-free environment where organic botanicals and expert care meet.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="primary-gradient text-on-primary px-10 py-5 rounded-xl font-headline font-bold text-lg shadow-xl hover:shadow-2xl transition-all">
+                            Book Your Spa Day
+                        </button>
+<button class="bg-surface-container-highest text-primary px-10 py-5 rounded-xl font-headline font-bold text-lg hover:bg-surface-bright transition-colors">
+                            View Services
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl z-0">
+<img class="w-full h-full object-cover" data-alt="A close-up portrait of a happy Golden Retriever being pampered in a luxury pet salon. The lighting is warm and sun-drenched, filtering through large windows into a clean, modern atelier. Soft cream and orange tones dominate the palette, creating an atmosphere of professional calm and premium joy. The dog's coat is pristine, and the surrounding environment features high-end grooming tools and natural wood textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPm2I4VOhiFZ2AwHIoBgaTUDEoQhvROzQFBZhzVcQKTZK4QKJuMowA1-2L1Or_pXPRbtYGNiaiEgPxRkgwxyjCishwdvrvejidJQRZsSdwcuew4z-dEgNOT-m-ljSQtJkF-U7afnBuAAKFsUehBoqFVbngYYWwnVJ5U2YFAEvBFLvf96Ch-BvSokLtKph2nytaYW8H5CevQGGIY1lcKF__t5d4IRvHoms6rRVwsbvEYqz0f7H2R2GQbkecNn8JcNX10emnkKqSAA"/>
+</div>
+<div class="absolute -bottom-12 -left-12 hidden lg:block w-72 h-72 rounded-xl overflow-hidden border-8 border-surface shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Detailed macro shot of organic botanical grooming products in minimalist glass amber bottles. A sprig of lavender and eucalyptus sits beside the bottles on a textured stone surface. The lighting is soft and high-key, emphasizing the premium quality of the natural ingredients used at The Barkyard salon. The aesthetic is clean, sophisticated, and focused on wellness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiWUKIsWGXEbPvGKlle3EIEMq3djko430BQ-VjSqDkDpbtsS7a1WvjYx3oyZOr3LhatErklw2SIh_68a4Hm5Ww4KmCcnX4gBsd0ntj_Xre7lJmsKC8vJk-BZI5KBJIh4fxrEy12a07ekKYtTpTrECuBRTi2h_NYQJNzMdK_w7EEvjFKdKoCVhiAjOCrIgtjTNhm5mtEEhM2UE8pWU1UCm7RuGWYelxL67t2KIyHFhppfvnwnigZ9qCG-3PzptojBqALEW73nHAUg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Services: Tonal Layering & Cards -->
+<section class="bg-surface-container-low py-24 rounded-t-[4rem]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-display font-bold text-on-surface mb-4">Signature Treatments</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg">Elevated care tailored to your dog's specific needs, using only the finest organic ingredients.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-all group border border-outline-variant/10">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">spa</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">The Royal Scrub</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">A deep-cleansing hydrotherapy session with pH-balanced organic shampoos, followed by a mineral-rich conditioning mask and a gentle blow-dry.</p>
+<div class="text-primary font-bold text-lg">$85 — $120</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-all group border border-outline-variant/10">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">content_cut</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">The Gentle Trim</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Precision styling by master groomers who specialize in breed-specific cuts. We prioritize your dog's comfort over speed, ensuring a fear-free experience.</p>
+<div class="text-primary font-bold text-lg">$65 — $95</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-all group border border-outline-variant/10">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl">flare</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Botanical Refresh</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">A quick touch-up featuring organic paw balm, ear cleaning with witch hazel, and a lavender-scented coat mist for lasting freshness.</p>
+<div class="text-primary font-bold text-lg">$45 — $60</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-high rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A wide-angle interior shot of a boutique grooming salon designed with warm wood, cream-colored tiles, and large windows. The space is filled with soft, natural morning sunlight. Professional groomers are seen in the background working calmly with dogs in a clutter-free, serene environment. The overall mood is luxurious, safe, and highly professional, utilizing the Barkyard color palette of oranges and warm neutrals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtwZIF25ELgWN7w3t8LNlRgj23hf7jPgP8u4_HKY5hRTGYugVleL3tKToEfcbjNo0RuMi6o6eTkVIChdkB8BRtZyeIQ9hLMndXrYcLH5X7Xa3jtbIsuJOCOhHvuzD0-QKhwfz_yGKcRJ54_034MnrmYFcxxjSJo1wHzsCPXcIm6sDUJMemlw4y29HUvVHoaeqi_Z0CqhwEPPineHTqxpuy-pM0RtQBsUxpYst-mmA23HC9i8RBheqn3ieBthk6HNJ7fp33oJLvPg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+<div>
+<h4 class="text-white text-3xl font-headline font-bold mb-2">Stress-Free Environment</h4>
+<p class="text-white/80">Every corner designed for canine serenity.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 bg-primary-container/20 rounded-xl p-8 flex flex-col justify-center">
+<h4 class="text-2xl font-headline font-bold text-primary mb-3">Organic Only</h4>
+<p class="text-on-surface-variant text-lg">We exclusively use biodegradable, vegan, and sulfate-free products that are as kind to the planet as they are to your pup's sensitive skin.</p>
+</div>
+<div class="bg-tertiary-container/30 rounded-xl p-6 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4">pet_supplies</span>
+<span class="font-headline font-bold text-on-tertiary-container">Expert Hand Stripping</span>
+</div>
+<div class="bg-secondary-container/30 rounded-xl p-6 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">schedule</span>
+<span class="font-headline font-bold text-on-secondary-container">One-on-One Sessions</span>
+</div>
+</div>
+</section>
+<!-- Grooming Gallery: Horizontal Scroll / Masonry Feel -->
+<section class="py-24 bg-surface-bright">
+<div class="max-w-7xl mx-auto px-6 mb-12 flex justify-between items-end">
+<div>
+<h2 class="text-4xl font-display font-bold text-on-surface">Grooming Gallery</h2>
+<p class="text-on-surface-variant mt-2">See the transformations from our sun-lit salon.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                    View Full Portfolio <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 px-6 no-scrollbar">
+<div class="flex-none w-80 h-96 rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A fluffy white Pomeranian after a luxury grooming session at The Barkyard. The dog is perfectly styled with a 'lion cut,' sitting proudly on a soft cream cushion. The lighting is high-key and elegant, reflecting a high-end pet spa aesthetic with warm neutral background tones and a focus on detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_MAvBPs2B-Dw4wuU0KpJ2LvlO-KmuSMZCy10aHX327jKAiQ0gezc0PkdUgJr_EHc4Y2ngUlDXNB8L7itrZM23q-GT_EetCCVN2_XqVE9vNq7ft4yYM2NWNRSBxmESC8JCbUer8sxGxkmcTn2pP84ZhmZeRI6ZpjDV0_GV5g-ary91bakuQR8c0Hrkwf6d6uinsBKB5LxdVyA9xEJHd9DGybqWdwyKsnt16VkHgpmxIxxFAtl_q2wNOjNUCNawgn2zCgq0IDYiiw"/>
+</div>
+<div class="flex-none w-80 h-96 rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A handsome French Bulldog looking fresh and clean after a 'Royal Scrub' treatment. The dog wears a small orange bowtie, matching The Barkyard brand colors. He is posed in a bright, modern studio setting with warm sun-drenched lighting and a clean, boutique feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXvow0GbFZQNspzM333BkmtOIr8UdEVrWJePC7yP0CMcroSuspWtrl6vm2KDSjz5PXazq6N_64BT1jIuyHLIjO3Rt11s5-4cXe2ckvtblh9J0EOpLkhFqRTFgDV8lRy6eJQqYnNSyGnoMPtGa2iPjyFk3hLoH-hbx6xIGNTpi77cxj2c0i6k-cA6M7MTsMT3rLZtlTLayd6mMOWk3Xprbgi94u4oF7Iu_vSbq6V_SVnSb0raj-czlkssJI2efIIuYisCgefVFl1g"/>
+</div>
+<div class="flex-none w-80 h-96 rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A sleek Doberman with a shiny, healthy coat after a botanical conditioning treatment. The lighting emphasizes the depth and texture of the black and tan fur. The setting is a minimalist, luxury pet salon with soft-focus grooming equipment in the background, maintaining a warm and professional atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMrfzTJ7nRTdWODLopgwOhgsScE-4jQrnN0ZRWhY4go0URNujE-jYXL4glXXhkvpGxT-BOere5dqR4_RZARsu_LlEnkAChYBSuqpsEjkqCeZ-zCT2yYnlq427_D1t3t0evHBSXw6F_PsGJTJdAGXfNk6lE1n9LhuHlnEkHDa3NWuvU7WS6zcsJ5i8Pf5zgGdWkywkv9YkDiDqgmSy9hWboNEffixu7BB78N7Zp-_6ErR-ZCV4cpD35fPa3WhRjnaOxS7IDu42ICw"/>
+</div>
+<div class="flex-none w-80 h-96 rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A happy Poodle mix with a perfectly rounded head trim and soft, curly fur. The dog is looking directly at the camera with a cheerful expression. The background features warm wood tones and soft cream lighting typical of The Barkyard's premium grooming atelier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuoQz-8S9fOD9_-D9VuyrsYZmy7ru4cIrtEttaH62IN_R1e3Q6Q1nJcECiPIa9G5TJmyILkS-R-NM8-WZma4u-MicWx439BIbcD5ZM5skaJXtH9i1g6eZxqFOgsgqb8_wIvmmw5Lo71i5U7-FiqIa-OntilVcvB6zCFLx6qIrSMzNOvQ9u7IRWwQPi4EETeLHHG0KaiU25TDNYpt_cKZmlisLjuctj4Il115oUAoHCF1MhhFPaKEvHgdfXnXYMNWqrEHtbrJSy2w"/>
+</div>
+</div>
+</section>
+<!-- Final CTA: The "Sun-Drenched" Banner -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="primary-gradient rounded-xl p-12 lg:p-20 relative overflow-hidden text-center">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
+<h2 class="text-4xl lg:text-6xl font-display font-extrabold text-on-primary mb-6 relative z-10">Ready for a Glow Up?</h2>
+<p class="text-on-primary/90 text-xl max-w-2xl mx-auto mb-12 relative z-10">Spaces fill up quickly. Secure your dog's spot in our stress-free atelier today and experience the difference of organic care.</p>
+<button class="bg-white text-primary px-12 py-5 rounded-xl font-headline font-extrabold text-xl shadow-2xl hover:bg-orange-50 transition-all scale-100 hover:scale-105 active:scale-95 relative z-10">
+                    Book Your Spa Day Now
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-stone-100 w-full rounded-t-[3rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="space-y-6">
+<div class="text-xl font-bold text-orange-900 font-headline"><img alt="The Barkyard Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhgRE9R0sAkWPCEres4cmgIhcapDR5MX5abPvHq-Bv1KX-GaBgMsMnDwN2eEVZhgNSfx2j8yWoCzSS6FxguTLSuS92QScl5HthHCOs5hp36rYX5qVlCnLaE0wyyePQQwGsIRangzPOwseWf8ZR3ZNMEbZ-ZDsKBFoS_rwFwyDJWg6jtG2UZp_K4dGEoOc_kN2gk9k6Cy6vCOXeHiwslqC8fLA9xZn_chc5xB9x1i_EGTL94ocrEGA4O8DlOHCWCfirFDNQYvr19"/></div>
+<p class="text-sm text-stone-600 font-body leading-relaxed">© 2024 The Barkyard. Elevated Joy for Every Tail. Our mission is to provide premium care that celebrates the unique spirit of every dog.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col space-y-4">
+<span class="text-orange-700 font-bold font-headline uppercase text-xs tracking-widest">Company</span>
+<a class="text-stone-500 hover:text-orange-500 text-sm transition-colors underline decoration-orange-500/30 underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-orange-500 text-sm transition-colors underline decoration-orange-500/30 underline-offset-4" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="text-orange-700 font-bold font-headline uppercase text-xs tracking-widest">Explore</span>
+<a class="text-stone-500 hover:text-orange-500 text-sm transition-colors underline decoration-orange-500/30 underline-offset-4" href="#">Contact Us</a>
+<a class="text-stone-500 hover:text-orange-500 text-sm transition-colors underline decoration-orange-500/30 underline-offset-4" href="#">Careers</a>
+</div>
+</div>
+<div class="flex flex-col space-y-6">
+<span class="text-orange-700 font-bold font-headline uppercase text-xs tracking-widest">Connect With Us</span>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center hover:bg-orange-100 transition-colors" href="#">
+<span class="material-symbols-outlined text-stone-600">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center hover:bg-orange-100 transition-colors" href="#">
+<span class="material-symbols-outlined text-stone-600">mail</span>
+</a>
+</div>
+<p class="text-xs text-stone-500 italic">123 Puppy Lane, Sunnyside Atelier, NY 10012</p>
+</div>
+</div>
+</footer>
+</body></html>

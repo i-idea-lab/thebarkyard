@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery &amp; Social Proof | The Barkyard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#e0e0ff",
+                      "surface": "#fff8f2",
+                      "on-secondary-fixed": "#000767",
+                      "on-secondary-container": "#27308a",
+                      "tertiary-fixed-dim": "#fabd00",
+                      "on-surface": "#211b0e",
+                      "on-primary-fixed": "#390c00",
+                      "surface-bright": "#fff8f2",
+                      "on-tertiary-fixed-variant": "#5b4300",
+                      "surface-container-highest": "#eee1cc",
+                      "primary-fixed": "#ffdbd0",
+                      "on-surface-variant": "#594139",
+                      "surface-tint": "#ab3500",
+                      "on-primary-container": "#5f1900",
+                      "secondary-fixed-dim": "#bdc2ff",
+                      "primary-container": "#ff6b35",
+                      "inverse-surface": "#373022",
+                      "outline": "#8d7168",
+                      "on-error-container": "#93000a",
+                      "on-background": "#211b0e",
+                      "outline-variant": "#e1bfb5",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#959efd",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#f4e7d2",
+                      "on-secondary-fixed-variant": "#343d96",
+                      "error": "#ba1a1a",
+                      "on-tertiary-container": "#412f00",
+                      "primary-fixed-dim": "#ffb59d",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed": "#ffdf9e",
+                      "tertiary": "#785900",
+                      "surface-dim": "#e5d8c4",
+                      "on-primary-fixed-variant": "#832600",
+                      "inverse-primary": "#ffb59d",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#faecd7",
+                      "surface-variant": "#eee1cc",
+                      "secondary": "#4c56af",
+                      "tertiary-container": "#c29200",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#fff2de",
+                      "inverse-on-surface": "#fcefda",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#261a00",
+                      "primary": "#ab3500",
+                      "background": "#fff8f2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Be Vietnam Pro"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-item:nth-child(even) { margin-top: 2rem; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-orange-50/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-sm dark:shadow-none transition-colors duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4 w-full">
+<div class="text-2xl font-bold text-orange-900 dark:text-orange-100 font-headline tracking-tight"><img alt="The Barkyard Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhgRE9R0sAkWPCEres4cmgIhcapDR5MX5abPvHq-Bv1KX-GaBgMsMnDwN2eEVZhgNSfx2j8yWoCzSS6FxguTLSuS92QScl5HthHCOs5hp36rYX5qVlCnLaE0wyyePQQwGsIRangzPOwseWf8ZR3ZNMEbZ-ZDsKBFoS_rwFwyDJWg6jtG2UZp_K4dGEoOc_kN2gk9k6Cy6vCOXeHiwslqC8fLA9xZn_chc5xB9x1i_EGTL94ocrEGA4O8DlOHCWCfirFDNQYvr19"/></div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-semibold tracking-tight">
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Training</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Grooming</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Pricing</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors" href="#">Gallery</a></div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-xl font-headline font-bold shadow-lg shadow-primary/20 scale-95 active:scale-90 transition-transform">
+                Book a Visit
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section: Celebration of Joy -->
+<header class="max-w-7xl mx-auto px-6 mb-24">
+<div class="flex flex-col md:flex-row items-end gap-12">
+<div class="md:w-3/5">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-headline font-bold text-xs uppercase tracking-widest mb-6">Social Proof &amp; Joy</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface tracking-tighter leading-[0.9] mb-8">
+                        The Best Day <br/><span class="text-primary italic">Every Day.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        At The Barkyard, we don't just care for pets—we celebrate them. See how our furry residents spend their sun-drenched afternoons in the atelier of play.
+                    </p>
+</div>
+<div class="md:w-2/5 flex justify-end">
+<div class="relative">
+<div class="absolute -inset-4 bg-tertiary/10 rounded-xl blur-2xl"></div>
+<img alt="Happy golden retriever" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl shadow-2xl rotate-3" data-alt="Happy golden retriever dog with a wide open mouth smile sitting on green grass in warm late afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ2i6X3UEfqFRnc08sv7nY2e55NeIuxSAIfw5Z-anzFJ1Ha-Eflnp2Mv4Az2-2FCYOaBjnahux126tZjIg7oHo3CDYuSn_zKNgPXI5zfiuLt7G6rfp0CIHul3rPGMyeOnMI7p67hZoaj0qCfLz1pYr9xs1bo5thjUhNw3PrSoAwDrFif954KXho2xlOCn1arX5HVMDPmFg79HIR_7uNhLt3PxwxY8j8KL4QSCnx6Fj5HlS5Uyj0CRxDQEzp3ArPFjnkbsQv7u5cw"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Gallery: Asymmetric Masonry Grid -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Column 1 -->
+<div class="space-y-8">
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low transition-all hover:shadow-xl">
+<img alt="Dog training session" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Young border collie focusing intently on a trainer during an outdoor agility exercise in a sunlit park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZafrJq_pEz5AhH_sXZWTgqUC3IWe44sM5-XUCiXYwFvMF3SHpyjFDMj94DO5Rm1Sbt3nAZwXvCqnNfcK7yz_mpPQcX6bpIA3rObcR9DLpwC8tuXYuDI5ruHea40K6P8Cpn6jVL8gtR5_nDIEKP0EiSucoQHLJJ2HGy6t3zprM0YSM5H88RD4k256rpa0ctsrHHYqlve-HvWD1hRDuEC7K8zxlLY4QS9nYSt45Q12e-yhCth2U7jEz5Ba_LBlsf8b2PFfg4a46NQ"/>
+<div class="absolute bottom-6 left-6 flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-bright/90 backdrop-blur text-primary text-xs font-bold rounded-full">Training</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low transition-all hover:shadow-xl">
+<img alt="Small dog at play" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Small white fluffy dog jumping in the air to catch a colorful toy in a sun-drenched backyard setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBIQgmj73mI-vS48eGjeA-BJy-alL2c24tkGiM9YoQ8Z6tQrKBv7nAwl5tC4oT3rSr4IpsFX5lwi9f4QVlIXuELInNagyzjgl76PrBG5CV_HB9xD__2WU1NQFSx8JI9WPc5Ij49plx3-Ws9l-cJa5REJWIunPMSVdY0YNOF97l-vwLLG_MJxb9Pbu_vb19ILEuNHhtRgit7zzCOvxim8DbN_a117HSVzxX6UpMToak8MA-E2noeheSUTuZ_fqs08ks6pBxrulbRw"/>
+</div>
+</div>
+<!-- Column 2 (Taller/Offset) -->
+<div class="space-y-8 md:mt-16">
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low transition-all hover:shadow-xl">
+<img alt="Group of dogs playing" class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Diverse pack of happy dogs of various breeds running together on a lush green lawn with warm lens flare" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUgAm0l8jMih_Ils7oy-IpwDZuW-U0rMFOiAzC-i_pT1F1hEH5aF6XDcD9cWzriyLsrPXN1b1rOgA-JrNFD0c8keXzvExUFjcC3fECoEcufp8hR3gP7Z8CZu3vHt0UUygMYDbpSnALrv4PakqNK_kCz1p827pehzb2f3hkcVLBFYRWhGJw_ShRN336e-1KyUPW6CkpCFrognt1musyuJq8MR-2ZAGLWkvAVUtJLGKDoMRqzDJC5x704lnWfKUQUVzhXwkUNtgR4A"/>
+</div>
+<div class="p-8 bg-primary rounded-xl text-on-primary flex flex-col justify-center min-h-[300px]">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="format_quote" style='font-variation-settings: "FILL" 1;'>format_quote</span>
+<p class="text-2xl font-headline font-bold leading-tight mb-6">"Cooper comes home tired, happy, and smelling like sunshine every single time."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden">
+<img alt="Client portrait" class="w-full h-full object-cover" data-alt="Portrait of a smiling young man in a casual sweater against a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHOwVu2Q0fkZ2sXyyuVtGckW_4Tit8UV2k1G8cQUfaGQK86tAomwmL7hxzOI--GAE6-IIJphJ2ER0WCea9ROodDDzoSqlCaNrTDoxD96byDcLkViGCvJyUTG66swEXvHp6W_gv7fYJWW-2uVJAzBAS69eQIK5GEdJxpwG3GgzzdKsmiKZmWVJztJzEcxrlXZSCkxLTcvX5KjhpoVR91RtFKn84TMcb-pwZyg9TxFKIcpJD-AMwF2Ws2s60T524XdHhbK-ou2aRyQ"/>
+</div>
+<div class="text-sm">
+<p class="font-bold">Mark T.</p>
+<p class="opacity-80">Cooper's Dad (Beagle)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 3 -->
+<div class="space-y-8">
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low transition-all hover:shadow-xl">
+<img alt="Groomed dog" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a perfectly groomed poodle with soft lighting highlighting its curly white fur and a ribbon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb3nlb_zE2vUmZZ6OPQ-qWDAfGDGCAZF2imbDuBGvU7o_3gsTyoBnqcR353yxiTljYI8txUjD17KTYZ5obyJ2h2xevnLG1XuUGlZQ3brXnCJbfQgjp7ciqlArY1T-ERqpyvrEf4GC4Zg0z1WeSQPOL4ZfVXtAHqa9Y0Ps4dDzXJE5njdVGLrLMm_UqiZK_hPnAlzRat4PPPu_y0nmpmQ3lNim9WJ1vDQ3dGHnvaVCk5n-U5HK_Hg7aE57KKMamx5BFWAZ0khyT9Q"/>
+<div class="absolute bottom-6 left-6 flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-bright/90 backdrop-blur text-primary text-xs font-bold rounded-full">Grooming</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low transition-all hover:shadow-xl">
+<img alt="Dog resting" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" data-alt="French bulldog resting comfortably on a soft sheepskin rug in a modern sunlit living room setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_pGGhAptoqhm6UFaTnO3lkRkKbwQZh_NwhS5JmhMLfLp2z0kc1avftU2DnNzfJgDwDByxkrWrrffchLS-pbqbEu57Waps0YPsU0k35FnaGfqqMyAyF5nS_WEfn9vGij09NoX0Ma5ItguBsmdJ-ZgiznHsiSHdTbm0mZ_xDCDSIRyTG9MlYEyWBRqbVAMHHmRH23z6usKy6qowbEKnCAvH0eD3xZJE59f2mvK5z2RMP2ziwJZNLSEqRFg0pkx6-nI6iIUv-XXwpQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Virtual Tour: The Facility Atelier -->
+<section class="bg-surface-container-low py-32 rounded-xl overflow-hidden mx-6">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface mb-4">Step Inside the Atelier</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">From high-impact play zones to serene grooming suites, our facilities are designed for maximum tail-wagging.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl">
+<img alt="The Training Arena" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Wide shot of a modern indoor dog training facility with clean wooden floors and high ceiling industrial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkmPudDy3lovQa6Jn8jayhrsXRjjZ5nX6wgPjBgE-S2JmLqGxpfkF_MdZg5pp42duVJh0l_Ds5jF3CH0pQZBFK-58zBKlCETIWLN9eGOXjkgL2ZuyiVi2qQvM9UBA_AeoEQwqqVHq6jVEmkfVygbcoqT3EPOqByvoZXA4NEB1UiJHWy8eG7mtlxYSGRHhM64mB8V1tzpmeiJNOe6CKyYzF-vdUTiJgANoqaqy1L0pXLYHGZbjbh6llzS99zIbMRh04eyvBzw01iQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-2xl font-bold">The Training Arena</h3>
+<p class="text-white/80 text-sm">Where new skills are mastered every day.</p>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl">
+<img alt="The Outdoor Lounge" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Spacious outdoor dog park with obstacles and clean grass under a bright blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR6YtGwvIkQi02d_WTl6EYqjX16vvH4nYrRUhYuvWWDnZHW_2CA694lTKijlSGq8tQ3IPPwLWOb51IGlJWxXV1Sd10jIakAd7V46PV6ul6yWlOmgo-5bWqkNSIF7qmZtPKJ8-w08mE4H-VCSlVwcN9SLeckkgboV9M1L4FhwNuRYDIG4yxYrKuJp_vR_yepTv4LiG4AEkpkyEe1j8KkA5gZYOomdkuLbBmuUCUP2--Bat27DT3Zzmb55KNioa0S9i9qREpfX_AYA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-xl font-bold">The Sunlit Courtyard</h3>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Grooming Suite" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Pristine white dog grooming station with modern equipment and soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASFVxT3tE-qKTbgAWSInm9r-A2ic9KJXhR6gDpw-fAwa6KMSMRMNtR1-o9Il_VofRdXQBCGLdSn6ZX8RBoomXZEX1DroYOYPwa62QRL8tpt0Oxy5A5lqB3mI-GMIlDIb5-RlvHNW5MIuMpKBWpTjkbznn9LMAHpPhJu_Hts0jOh2Puz-h6lzRA_JfSoGkTxFu1emEQQIvZS3VdUIxFTuGreu50W6sM8TMsGirTBjheU7CYllRhJGgoldRgR8mOSipGFOisj_iAug"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-4">
+<h4 class="text-white font-bold">Spa Suites</h4>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Relaxation Zone" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Quiet cozy area with soft beds for dogs to rest after training sessions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSTMddWv2KImnYqDP_3DreJukqnTEXuHZ4JV4VP1CCQ4qnnjN6msNJCvOigJq7D5-8xYY8H1vf9EWB9_Vfv_kx5im9Ypczq4bDema1jI0BpHZ82QJPaNoKrv0eo3BOw9poUxFIae_LX1Ym3GMrwxQwtbo3o8WhPEzjcYF8yY50IVlXYwRIzPsukjBByrhZCuwX63t1A3uF0MOgzz-o3_HDDzF73XLIFsb3FxQGVRprjiSm0yEWiOBoHMcOCuEP0rjSYbF_E06FLA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-4">
+<h4 class="text-white font-bold">Napping Nooks</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Proof Counter -->
+<section class="max-w-7xl mx-auto px-6 mt-32 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div>
+<p class="text-5xl font-headline font-extrabold text-primary mb-2">4,200+</p>
+<p class="text-on-surface-variant font-medium">Tails Wagged</p>
+</div>
+<div>
+<p class="text-5xl font-headline font-extrabold text-primary mb-2">150</p>
+<p class="text-on-surface-variant font-medium">Daily Bubbles</p>
+</div>
+<div>
+<p class="text-5xl font-headline font-extrabold text-primary mb-2">12</p>
+<p class="text-on-surface-variant font-medium">Expert Trainers</p>
+</div>
+<div>
+<p class="text-5xl font-headline font-extrabold text-primary mb-2">5.0</p>
+<p class="text-on-surface-variant font-medium">Client Rating</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-stone-100 dark:bg-stone-900 tonal-shift via surface-container-low">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="space-y-6">
+<div class="text-xl font-bold text-orange-900 dark:text-orange-100 font-headline"><img alt="The Barkyard Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhgRE9R0sAkWPCEres4cmgIhcapDR5MX5abPvHq-Bv1KX-GaBgMsMnDwN2eEVZhgNSfx2j8yWoCzSS6FxguTLSuS92QScl5HthHCOs5hp36rYX5qVlCnLaE0wyyePQQwGsIRangzPOwseWf8ZR3ZNMEbZ-ZDsKBFoS_rwFwyDJWg6jtG2UZp_K4dGEoOc_kN2gk9k6Cy6vCOXeHiwslqC8fLA9xZn_chc5xB9x1i_EGTL94ocrEGA4O8DlOHCWCfirFDNQYvr19"/></div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                    © 2024 The Barkyard. Elevated Joy for Every Tail. We provide premium care for the modern dog and their human.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-orange-700 dark:text-orange-500 font-bold font-headline uppercase text-xs tracking-widest">Navigation</p>
+<a class="text-stone-500 hover:text-orange-500 underline decoration-orange-500/30 underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-orange-500 underline decoration-orange-500/30 underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-orange-500 underline decoration-orange-500/30 underline-offset-4 transition-all" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-orange-700 dark:text-orange-500 font-bold font-headline uppercase text-xs tracking-widest">Connect</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary transition-transform hover:scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary transition-transform hover:scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="camera_alt">camera_alt</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary transition-transform hover:scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

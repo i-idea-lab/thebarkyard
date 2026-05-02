@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e0e0ff",
+                    "surface": "#fff8f2",
+                    "on-secondary-fixed": "#000767",
+                    "on-secondary-container": "#27308a",
+                    "tertiary-fixed-dim": "#fabd00",
+                    "on-surface": "#211b0e",
+                    "on-primary-fixed": "#390c00",
+                    "surface-bright": "#fff8f2",
+                    "on-tertiary-fixed-variant": "#5b4300",
+                    "surface-container-highest": "#eee1cc",
+                    "primary-fixed": "#ffdbd0",
+                    "on-surface-variant": "#594139",
+                    "surface-tint": "#ab3500",
+                    "on-primary-container": "#5f1900",
+                    "secondary-fixed-dim": "#bdc2ff",
+                    "primary-container": "#ff6b35",
+                    "inverse-surface": "#373022",
+                    "outline": "#8d7168",
+                    "on-error-container": "#93000a",
+                    "on-background": "#211b0e",
+                    "outline-variant": "#e1bfb5",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#959efd",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#f4e7d2",
+                    "on-secondary-fixed-variant": "#343d96",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#412f00",
+                    "primary-fixed-dim": "#ffb59d",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdf9e",
+                    "tertiary": "#785900",
+                    "surface-dim": "#e5d8c4",
+                    "on-primary-fixed-variant": "#832600",
+                    "inverse-primary": "#ffb59d",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#faecd7",
+                    "surface-variant": "#eee1cc",
+                    "secondary": "#4c56af",
+                    "tertiary-container": "#c29200",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#fff2de",
+                    "inverse-on-surface": "#fcefda",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#261a00",
+                    "primary": "#ab3500",
+                    "background": "#fff8f2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Be+Vietnam+Pro', sans-serif; background-color: #fff8f2; }
+        .headline-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .cta-gradient { background: linear-gradient(135deg, #ab3500 0%, #ff6b35 100%); }
+    </style>
+</head>
+<body class="text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-orange-50/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-sm dark:shadow-none transition-colors duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4 w-full">
+<div class="text-2xl font-bold text-orange-900 dark:text-orange-100 font-['Plus_Jakarta_Sans'] tracking-tight"><img alt="The Barkyard Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhgRE9R0sAkWPCEres4cmgIhcapDR5MX5abPvHq-Bv1KX-GaBgMsMnDwN2eEVZhgNSfx2j8yWoCzSS6FxguTLSuS92QScl5HthHCOs5hp36rYX5qVlCnLaE0wyyePQQwGsIRangzPOwseWf8ZR3ZNMEbZ-ZDsKBFoS_rwFwyDJWg6jtG2UZp_K4dGEoOc_kN2gk9k6Cy6vCOXeHiwslqC8fLA9xZn_chc5xB9x1i_EGTL94ocrEGA4O8DlOHCWCfirFDNQYvr19"/></div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors font-['Plus_Jakarta_Sans'] font-semibold" href="#">Training</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors font-['Plus_Jakarta_Sans'] font-semibold" href="#">Grooming</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors font-['Plus_Jakarta_Sans'] font-semibold" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors font-['Plus_Jakarta_Sans'] font-semibold" href="#">Pricing</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 transition-colors font-['Plus_Jakarta_Sans'] font-semibold" href="#">Gallery</a></div>
+<button class="cta-gradient text-on-primary px-8 py-3 rounded-full font-bold scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/20">
+                Book a Visit
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6">
+<div class="max-w-7xl mx-auto">
+<!-- Hero Section -->
+<div class="mb-20 text-center md:text-left">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-wide uppercase mb-6">Join the Pack</span>
+<h1 class="headline-font text-5xl md:text-7xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-6">
+                    A Better Life <br/>
+<span class="text-primary italic">Starts with a Paw.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl font-medium leading-relaxed">
+                    Ready to elevate your pet's lifestyle? Tell us a bit about your furry friend and let’s create their perfect visit together.
+                </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Inquiry Form (Bento Style) -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<form class="relative z-10 space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Owner Name -->
+<div class="space-y-3">
+<label class="headline-font font-bold text-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary scale-90">person</span>
+                                    YOUR NAME
+                                </label>
+<input class="w-full bg-surface-container-lowest border-none rounded-DEFAULT px-6 py-4 text-on-surface placeholder:text-outline-variant focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="John Doe" type="text"/>
+</div>
+<!-- Pet Name -->
+<div class="space-y-3">
+<label class="headline-font font-bold text-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary scale-90">pets</span>
+                                    PET NAME
+                                </label>
+<input class="w-full bg-surface-container-lowest border-none rounded-DEFAULT px-6 py-4 text-on-surface placeholder:text-outline-variant focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="Buddy" type="text"/>
+</div>
+</div>
+<!-- Services Interested In -->
+<div class="space-y-6">
+<label class="headline-font font-bold text-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary scale-90">checklist</span>
+                                SERVICES INTERESTED IN
+                            </label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<div class="flex items-center justify-center p-4 bg-surface-container-lowest rounded-DEFAULT border-2 border-transparent peer-checked:border-primary peer-checked:bg-primary/5 group-hover:bg-surface-bright transition-all">
+<span class="font-bold text-on-surface-variant peer-checked:text-primary">Training</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<div class="flex items-center justify-center p-4 bg-surface-container-lowest rounded-DEFAULT border-2 border-transparent peer-checked:border-primary peer-checked:bg-primary/5 group-hover:bg-surface-bright transition-all">
+<span class="font-bold text-on-surface-variant">Grooming</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<div class="flex items-center justify-center p-4 bg-surface-container-lowest rounded-DEFAULT border-2 border-transparent peer-checked:border-primary peer-checked:bg-primary/5 group-hover:bg-surface-bright transition-all">
+<span class="font-bold text-on-surface-variant">Daycare</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<div class="flex items-center justify-center p-4 bg-surface-container-lowest rounded-DEFAULT border-2 border-transparent peer-checked:border-primary peer-checked:bg-primary/5 group-hover:bg-surface-bright transition-all">
+<span class="font-bold text-on-surface-variant">Pet Spa</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<div class="flex items-center justify-center p-4 bg-surface-container-lowest rounded-DEFAULT border-2 border-transparent peer-checked:border-primary peer-checked:bg-primary/5 group-hover:bg-surface-bright transition-all">
+<span class="font-bold text-on-surface-variant">Pool Sessions</span>
+</div>
+</label>
+</div>
+</div>
+<button class="w-full cta-gradient text-on-primary py-5 rounded-xl text-lg font-extrabold flex items-center justify-center gap-3 shadow-xl shadow-primary/30 active:scale-[0.98] transition-transform" type="submit">
+                            Send Inquiry
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Contact & Map (Asymmetric) -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Location Card -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm">
+<div class="relative h-64 group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern minimalist aesthetic map view of a clean coastal city street with warm sunlight and soft shadows" data-location="Seawoods" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuAOYWpJcr708n49rI3H4a0AfJWvp5D4p_uzFp0H7S3Xzym32303QMy2WnYC5M6lXP-rWDR13G16zkjNuQInBsjBZF-ysX8uzqSRIgWWodmsyh_x7Pp7yj0wW1t8-sGFjxJWZgrJ6v80neDy0yhLRfNRfVZhS14LxxspEVXM9bqxkxXIbvVP8N34KD7tA2SOgFdr7QdbV_pOXKbjcQMQTdz8yxov16yoJofsG3ACZZw3yUo4YIGM2jyGLRr38QKHA-yDB05-_hYA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="headline-font text-2xl font-bold">Visit Us</h3>
+</div>
+</div>
+<div class="p-8 space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Seawoods Boutique Studio</p>
+<p class="text-on-surface-variant text-sm">Shop no - 1, NEPTUNE CHS, Seawoods, Navi Mumbai</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">alternate_email</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Instagram</p>
+<a class="text-primary font-semibold text-sm hover:underline" href="https://instagram.com/thebarkyard">@thebarkyard</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Image -->
+<div class="rounded-xl overflow-hidden h-72">
+<img class="w-full h-full object-cover" data-alt="Happy golden retriever sitting in a sun-drenched modern studio with warm wooden floors and soft neutral decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA34TFN-460NAlOWFSbRqhGao73tfOnjKAOwc3rdbNhBeAYwjCPkzV6bh2ATnIv7BRmmchbHu4lcCftAusUU0AjxXzy6IXPaFd_q522B2cEnFisxuPqSPtafz8Pl-53EyiD1Gs8P9Lk13tnisccAYA2fHHtv2TRQ24t5881Iu9wgADhAb_VnhhdhVJ5Od11lgc5b_Hs6ZOvDCvCm5iXhuBS7JlF3tNa7DNryuQm_r4umu793S7-Nuuh2lR6Mf_Lsa8szxKqUqsUjg"/>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-stone-100 dark:bg-stone-900 rounded-t-[3rem] mt-20 transition-colors duration-300">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="space-y-4">
+<div class="text-xl font-bold text-orange-900 dark:text-orange-100 font-['Plus_Jakarta_Sans']"><img alt="The Barkyard Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhgRE9R0sAkWPCEres4cmgIhcapDR5MX5abPvHq-Bv1KX-GaBgMsMnDwN2eEVZhgNSfx2j8yWoCzSS6FxguTLSuS92QScl5HthHCOs5hp36rYX5qVlCnLaE0wyyePQQwGsIRangzPOwseWf8ZR3ZNMEbZ-ZDsKBFoS_rwFwyDJWg6jtG2UZp_K4dGEoOc_kN2gk9k6Cy6vCOXeHiwslqC8fLA9xZn_chc5xB9x1i_EGTL94ocrEGA4O8DlOHCWCfirFDNQYvr19"/></div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                    We redefine the urban pet experience through premium care and heartfelt community building.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<a class="text-stone-500 hover:text-orange-500 font-['Be_Vietnam_Pro'] text-sm underline decoration-orange-500/30 underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-orange-500 font-['Be_Vietnam_Pro'] text-sm underline decoration-orange-500/30 underline-offset-4" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-orange-500 font-['Be_Vietnam_Pro'] text-sm underline decoration-orange-500/30 underline-offset-4" href="#">Contact Us</a>
+<a class="text-stone-500 hover:text-orange-500 font-['Be_Vietnam_Pro'] text-sm underline decoration-orange-500/30 underline-offset-4" href="#">Careers</a>
+</div>
+<div class="flex flex-col justify-between">
+<div class="flex gap-4 items-center">
+<div class="p-2 rounded-full bg-stone-200 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400">Trusted by 2,000+ happy tails.</p>
+</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400 mt-8 md:mt-0">
+                    © 2024 The Barkyard. Elevated Joy for Every Tail.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
